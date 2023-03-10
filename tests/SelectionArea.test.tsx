@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import SelectionArea from "../src/components/SelectionArea";
+import { SelectionArea } from "../src/components/SelectionArea";
 
 const selections = ["test1", "test2", "test3"];
 

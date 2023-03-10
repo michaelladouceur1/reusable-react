@@ -1,14 +1,14 @@
 import React from "react";
 import "./SelectionArea.css";
 
-interface iSelectionArea {
+export interface iSelectionArea {
 	selections: string[];
 	selected: string;
 	setSelected: () => void;
 	placeholder?: string;
 }
 
-const SelectionArea: React.FC<iSelectionArea> = ({ selections, selected, setSelected, placeholder }) => {
+export const SelectionArea: React.FC<iSelectionArea> = ({ selections, selected, setSelected, placeholder }) => {
 	return (
 		<div className="selection-area">
 			<input className="selected-value" />
@@ -24,5 +24,3 @@ const SelectionArea: React.FC<iSelectionArea> = ({ selections, selected, setSele
 		</div>
 	);
 };
-
-export default SelectionArea;
